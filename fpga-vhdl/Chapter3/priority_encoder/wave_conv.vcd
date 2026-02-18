@@ -1,0 +1,56 @@
+$date
+  Sat Jul 19 08:25:55 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb_prio_encoder $end
+$var reg 4 ! r[4:1] $end
+$var reg 3 " pcode[2:0] $end
+$scope module uut $end
+$var reg 4 # r[4:1] $end
+$var reg 3 $ pcode[2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b0000 !
+b000 "
+b0000 #
+b000 $
+#10000000
+b0001 !
+b001 "
+b0001 #
+b001 $
+#20000000
+b0010 !
+b010 "
+b0010 #
+b010 $
+#30000000
+b0100 !
+b011 "
+b0100 #
+b011 $
+#40000000
+b1000 !
+b100 "
+b1000 #
+b100 $
+#50000000
+b1011 !
+b1011 #
+#60000000
+b0100 !
+b011 "
+b0100 #
+b011 $
+#70000000
