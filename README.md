@@ -14,10 +14,10 @@ KTÜ Electrical & Electronics Engineering · 2025 – 2026
 
 </div>
 
-> **RU:** Лабораторные по микроконтроллерам и ПЛИС: STM32 на регистрах, MSP430 ↔ STM32 по I²C/SPI/UART, ESP32 (ESP‑IDF), 23 проекта на Nuvoton M031, 8051 на ассемблере и C, VHDL с тестбенчами, курс FPGA на Basys 3.
-> **TR:** Mikrodenetleyici ve FPGA laboratuvarları: register seviyesinde STM32, I²C/SPI/UART ile MSP430 ↔ STM32, ESP32 (ESP‑IDF), Nuvoton M031 ile 23 proje, Assembly ve C ile 8051, testbench'li VHDL, Basys 3 FPGA kursu.
+> **RU:** Лабораторные по микроконтроллерам и ПЛИС: STM32 на регистрах, MSP430 ↔ STM32 по I²C/SPI/UART, ESP32 (ESP‑IDF), 24 проекта на Nuvoton M031, 8051 на ассемблере и C, VHDL с тестбенчами, курс FPGA на Basys 3.
+> **TR:** Mikrodenetleyici ve FPGA laboratuvarları: register seviyesinde STM32, I²C/SPI/UART ile MSP430 ↔ STM32, ESP32 (ESP‑IDF), Nuvoton M031 ile 24 proje, Assembly ve C ile 8051, testbench'li VHDL, Basys 3 FPGA kursu.
 
-This repository merges my earlier single-board repos and local projects. (`stm32-f401re-labs`, `8051_LAB_ASM`, `vhdl_lab`, `msp430-labs`, `esp32s_NodeMCU`, `embedded-lab`, MSP430 part of `studyRepo`) into one place. **Their full git history is kept** — `git log -- stm32/` shows it.
+This repository puts my local course projects and my earlier single-board repos (`stm32-f401re-labs`, `8051_LAB_ASM`, `vhdl_lab`, `msp430-labs`, `esp32s_NodeMCU`, `embedded-lab`, MSP430 part of `studyRepo`) into one place. **Their full git history is kept** — `git log -- stm32/` shows it.
 
 ---
 
@@ -28,7 +28,7 @@ This repository merges my earlier single-board repos and local projects. (`stm32
 | [`stm32/`](stm32) | NUCLEO‑F401RE · STM32CubeIDE | register‑level GPIO blink · bare‑metal PWM on TIM1_CH1 (PA8) · PWM → RC low‑pass → ADC (PA0) → UART |
 | [`msp430/`](msp430) | MSP430 + STM32 (HAL) | I²C, SPI and UART: MSP430 test side and STM32 data‑sending side |
 | [`esp32/`](esp32) | ESP32 · ESP‑IDF | blink example with `led_strip` component, CMake build, pytest |
-| [`nuvoton-m031/`](nuvoton-m031) | Nuvoton M032KG (Cortex‑M0) · `arm-none-eabi-gcc` + pyOCD, no Keil | 23 projects from LED to a mini game console: GPIO + interrupts, ADC (pots, NTC, LDR), timers, PWM / buzzer, encoder, UART Bluetooth, SPI addressable LEDs, I²C scanner / BNO055 / LCD / OLED, APA102 ring games |
+| [`nuvoton-m031/`](nuvoton-m031) | Nuvoton M032KG (Cortex‑M0) · `arm-none-eabi-gcc` + pyOCD, no Keil | 24 projects from LED to a mini game console: GPIO + interrupts, ADC (pots, NTC, LDR), timers, PWM / buzzer, encoder, UART Bluetooth, SPI addressable LEDs, I²C scanner / BNO055 / LCD / OLED, APA102 ring games |
 | [`8051/`](8051) | MCS‑51 · SDCC | 6 assembly labs (addressing, arithmetic/BCD, jumps & stack, I/O bits, tables, serial) + 4 embedded‑C labs |
 | [`fpga-vhdl/`](fpga-vhdl) | VHDL · GHDL · GTKWave | comparators, decoder, priority encoder, shift / bidirectional / type‑conversion demos, each with a testbench |
 | [`fpga-vhdl/basys3_course/`](fpga-vhdl/basys3_course) | Basys 3 (Artix‑7) · Verilog · Icarus | "FPGA → radar" course: syllabus, glossary, Basys 3 pinout + XDC, half‑adder smoke test, lesson 1 (two's complement, ripple delay) |
