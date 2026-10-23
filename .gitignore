@@ -28,3 +28,6 @@ managed_components/
 *.cf
 *.vcd
 *.ghw
+
+# Nuvoton build output
+nuvoton-m031/projects/*/build/

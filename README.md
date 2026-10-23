@@ -8,15 +8,16 @@ KTÜ Electrical & Electronics Engineering · 2025 – 2026
 ![STM32](https://img.shields.io/badge/STM32-F401RE-03234B?logo=stmicroelectronics&logoColor=white)
 ![MSP430](https://img.shields.io/badge/TI-MSP430-c00?logo=texasinstruments&logoColor=white)
 ![ESP32](https://img.shields.io/badge/ESP32-ESP--IDF-E7352C?logo=espressif&logoColor=white)
+![Nuvoton](https://img.shields.io/badge/Nuvoton-M031%20·%20Cortex--M0-00a0e9)
 ![8051](https://img.shields.io/badge/8051-ASM%20%2B%20SDCC-7aa2f7)
-![VHDL](https://img.shields.io/badge/FPGA-VHDL%20·%20GHDL-9ece6a)
+![FPGA](https://img.shields.io/badge/FPGA-VHDL%20·%20Verilog%20·%20Basys%203-9ece6a)
 
 </div>
 
-> **RU:** Лабораторные по микроконтроллерам и ПЛИС: STM32 на регистрах, MSP430 ↔ STM32 по I²C/SPI/UART, ESP32 (ESP‑IDF), 8051 на ассемблере и C, VHDL с тестбенчами.
-> **TR:** Mikrodenetleyici ve FPGA laboratuvarları: register seviyesinde STM32, I²C/SPI/UART ile MSP430 ↔ STM32, ESP32 (ESP‑IDF), Assembly ve C ile 8051, testbench'li VHDL.
+> **RU:** Лабораторные по микроконтроллерам и ПЛИС: STM32 на регистрах, MSP430 ↔ STM32 по I²C/SPI/UART, ESP32 (ESP‑IDF), 23 проекта на Nuvoton M031, 8051 на ассемблере и C, VHDL с тестбенчами, курс FPGA на Basys 3.
+> **TR:** Mikrodenetleyici ve FPGA laboratuvarları: register seviyesinde STM32, I²C/SPI/UART ile MSP430 ↔ STM32, ESP32 (ESP‑IDF), Nuvoton M031 ile 23 proje, Assembly ve C ile 8051, testbench'li VHDL, Basys 3 FPGA kursu.
 
-This repository merges my earlier single-board repos (`stm32-f401re-labs`, `8051_LAB_ASM`, `vhdl_lab`, `msp430-labs`, `esp32s_NodeMCU`, `embedded-lab`, MSP430 part of `studyRepo`) into one place. **Their full git history is kept** — `git log -- stm32/` shows it.
+This repository merges my earlier single-board repos and local projects. (`stm32-f401re-labs`, `8051_LAB_ASM`, `vhdl_lab`, `msp430-labs`, `esp32s_NodeMCU`, `embedded-lab`, MSP430 part of `studyRepo`) into one place. **Their full git history is kept** — `git log -- stm32/` shows it.
 
 ---
 
@@ -27,8 +28,10 @@ This repository merges my earlier single-board repos (`stm32-f401re-labs`, `8051
 | [`stm32/`](stm32) | NUCLEO‑F401RE · STM32CubeIDE | register‑level GPIO blink · bare‑metal PWM on TIM1_CH1 (PA8) · PWM → RC low‑pass → ADC (PA0) → UART |
 | [`msp430/`](msp430) | MSP430 + STM32 (HAL) | I²C, SPI and UART: MSP430 test side and STM32 data‑sending side |
 | [`esp32/`](esp32) | ESP32 · ESP‑IDF | blink example with `led_strip` component, CMake build, pytest |
+| [`nuvoton-m031/`](nuvoton-m031) | Nuvoton M032KG (Cortex‑M0) · `arm-none-eabi-gcc` + pyOCD, no Keil | 23 projects from LED to a mini game console: GPIO + interrupts, ADC (pots, NTC, LDR), timers, PWM / buzzer, encoder, UART Bluetooth, SPI addressable LEDs, I²C scanner / BNO055 / LCD / OLED, APA102 ring games |
 | [`8051/`](8051) | MCS‑51 · SDCC | 6 assembly labs (addressing, arithmetic/BCD, jumps & stack, I/O bits, tables, serial) + 4 embedded‑C labs |
 | [`fpga-vhdl/`](fpga-vhdl) | VHDL · GHDL · GTKWave | comparators, decoder, priority encoder, shift / bidirectional / type‑conversion demos, each with a testbench |
+| [`fpga-vhdl/basys3_course/`](fpga-vhdl/basys3_course) | Basys 3 (Artix‑7) · Verilog · Icarus | "FPGA → radar" course: syllabus, glossary, Basys 3 pinout + XDC, half‑adder smoke test, lesson 1 (two's complement, ripple delay) |
 
 ```mermaid
 flowchart LR
@@ -47,6 +50,7 @@ flowchart LR
 | STM32 | STM32CubeIDE, or `arm-none-eabi-gcc` + `st-flash` |
 | MSP430 | Code Composer Studio (CCS) |
 | ESP32 | ESP‑IDF: `idf.py set-target esp32 && idf.py build flash monitor` |
+| Nuvoton M031 | `cd nuvoton-m031/projects/01_led && make flash` (see `nuvoton-m031/README.md`) |
 | 8051 | SDCC: `sdcc main.c` → `packihx main.ihx > main.hex` |
 | VHDL | `make` in a lab folder (GHDL), waveforms in GTKWave |
 
