@@ -1,0 +1,55 @@
+$date
+  Mon Jul 14 16:09:57 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module numeric_std $end
+$upscope $end
+$scope module tb_comparator $end
+$var reg 2 ! a[1:0] $end
+$var reg 2 " b[1:0] $end
+$var reg 1 # gt $end
+$scope module uut $end
+$var reg 2 $ a[1:0] $end
+$var reg 2 % b[1:0] $end
+$var reg 1 & gt $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b00 !
+b00 "
+0#
+b00 $
+b00 %
+0&
+#10000000
+b10 !
+b01 "
+1#
+b10 $
+b01 %
+1&
+#20000000
+b01 !
+b11 "
+0#
+b01 $
+b11 %
+0&
+#30000000
+b11 !
+b10 "
+1#
+b11 $
+b10 %
+1&
+#40000000

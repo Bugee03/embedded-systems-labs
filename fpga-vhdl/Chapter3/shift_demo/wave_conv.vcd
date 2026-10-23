@@ -1,0 +1,39 @@
+$date
+  Fri Jul 18 17:31:25 2025
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$scope module standard $end
+$upscope $end
+$scope module std_logic_1164 $end
+$upscope $end
+$scope module tb_shift_demo $end
+$var reg 8 ! a[7:0] $end
+$var reg 8 " rot_r[7:0] $end
+$var reg 8 # rot_l[7:0] $end
+$var reg 8 $ log_r[7:0] $end
+$var reg 8 % arith_r[7:0] $end
+$scope module uut $end
+$var reg 8 & a[7:0] $end
+$var reg 8 ' rot_r[7:0] $end
+$var reg 8 ( rot_l[7:0] $end
+$var reg 8 ) log_r[7:0] $end
+$var reg 8 * arith_r[7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+b10110011 !
+b01110110 "
+b10011101 #
+b00010110 $
+b11110110 %
+b10110011 &
+b01110110 '
+b10011101 (
+b00010110 )
+b11110110 *

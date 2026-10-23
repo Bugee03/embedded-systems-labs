@@ -1,0 +1,19 @@
+.DS_Store
+**/.DS_Store
+.DS_Store
+**/.DS_Store
+# ModelSim
+work/
+*.wlf
+*.log
+*.vcd
+
+# Vivado
+*.jou
+*.str
+*.cache
+*.runs
+*.hw
+
+# Mac
+.DS_Store
