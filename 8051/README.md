@@ -41,12 +41,9 @@ This repository is part of my embedded systems engineering training.
 
 # 📂 Repository Structure
 
-8051_LAB_ASM/
-│
-├── ASM/ → Pure 8051 Assembly Labs
-├── C/ → Embedded C Labs
-├── docs/ → Toolchain and hardware notes
-└── README.md
+8051/
+├── ASM/ → 6 assembly labs (addressing, arithmetic, jumps & stack, I/O bits, tables, serial)
+└── C/   → 4 embedded‑C labs for SDCC (GPIO toggle ×2, delay, UART)
 
 
 

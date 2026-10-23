@@ -1,0 +1,30 @@
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+cmake-build-*/
+# build outputs (STM32CubeIDE, ESP-IDF, CCS, SDCC, GHDL)
+build/
+Debug/
+Release/
+managed_components/
+*.o
+*.elf
+*.bin
+*.map
+*.d
+*.su
+# SDCC (8051): keep only main.c
+8051/C/**/*.asm
+*.ihx
+*.lk
+*.lst
+*.mem
+*.rel
+*.rst
+*.sym
+*.hex
+# GHDL (VHDL)
+*.cf
+*.vcd
+*.ghw

@@ -15,14 +15,11 @@ It is focused on learning:
 
 # 📂 Project Structure
 
-vhdl_lab/
-│
-├── Chapter1/ # Basic logic gates & combinational circuits
-├── Chapter3/ # Sequential logic & flip-flops
-├── my_first/ # First VHDL experiments
-├── test/ # Testbench files
-├── LICENSE
-└── README.md
+fpga-vhdl/
+├── Chapter1/ # comparators (eq1, eq2, 2-bit), binary decoder, gate-level greater-than
+├── Chapter3/ # priority encoder, shift, bidirectional (inout), type conversion
+├── my_first/ # first VHDL experiments
+└── test/     # testbench files
 ---
 
 # 🧠 Topics Covered
