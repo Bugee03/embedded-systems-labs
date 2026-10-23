@@ -1,0 +1,12 @@
+ORG 0000H
+
+HERE: SETB P1.0
+      LCALL DELAY
+      CLR P1.0
+      LCALL DELAY
+      SJMP HERE
+
+
+DELAY:    MOV     R5,#0FFH
+AGAIN:    DJNZ    R5,AGAIN
+          RET

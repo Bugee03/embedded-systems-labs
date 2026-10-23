@@ -1,0 +1,12 @@
+ORG 0000H
+
+MOV P1,#55
+MOV 32H,#200
+LOP1: MOV P1,00H
+	  ACALL DELAY
+	  DJNZ 32H,LOP1
+
+DELAY:    MOV     R5,#0FFH
+AGAIN:    DJNZ    R5,AGAIN
+          RET
+          END
